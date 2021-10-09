@@ -3,7 +3,7 @@ class Course {
         id,
         price,
         instructor,
-        availableSpaces,
+        // availableSpaces,
         title,
         description,
         image
@@ -11,7 +11,7 @@ class Course {
         this.id = id;
         this.price = price;
         this.instructor = instructor;
-        this.availableSpaces = availableSpaces;
+        // this.availableSpaces = availableSpaces;
         this.title = title;
         this.description = description;
         this.image = image;
@@ -30,7 +30,7 @@ const courses = [
         "SD100",
         154.99,
         "Chris MacDonald",
-        15,
+        // 15,
         "Introduction to Web Development",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
         "html_and_css.jpg"
@@ -39,7 +39,7 @@ const courses = [
         "SD110",
         223.01,
         "Chris MacDonald",
-        3,
+        // 3,
         "JavaScript Basics",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
         "js-basics.png"
@@ -48,7 +48,7 @@ const courses = [
         "SD120",
         99.99,
         "Chris MacDonald",
-        10,
+        // 10,
         "Object Oriented JavaScript",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
         "advanced-javascript.png"
@@ -57,7 +57,7 @@ const courses = [
         "SD145",
         49.99,
         "Chris MacDonald",
-        30,
+        // 30,
         "JavaScript Testing",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
         "testing.png"
@@ -66,7 +66,7 @@ const courses = [
         "SD260",
         149.99,
         "Chris MacDonald",
-        5,
+        // 5,
         "Introduction to React",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
         "react.jpg"
@@ -75,7 +75,7 @@ const courses = [
         "SD130",
         149.99,
         "Chris MacDonald",
-        15,
+        // 15,
         "Tools and Automation",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ",
         "tools.png"
@@ -102,8 +102,14 @@ courses.forEach(function (course) {
           <span>${course.instructor}</span>
         </div>
         <button id="add-to-cart">Add To Cart</button>
-        <div id="spaces-remaining"><span>${course.availableSpaces}</span> spaces remaining</div>
+   
+
+
       </div>
     </li>`
     );
 });
+
+{
+    /* <div id="spaces-remaining"><span>${course.availableSpaces}</span> spaces remaining</div> */
+}
